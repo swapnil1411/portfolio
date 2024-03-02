@@ -10,7 +10,7 @@ import Image from "next/image";
 
 import ems from "../public/Employee.png";
 import drivingTest from "../public/drivingTest.png";
-import { Canvas } from "@react-three/fiber";
+
 import Blob from "./components/blob";
 
 export default function Home() {
@@ -51,14 +51,9 @@ export default function Home() {
             <h3 className="py-2 text-2xl md:text-3xl dark:text-white">
               Developer .
             </h3>
-            <Canvas
-              camera={{
-                position: [10, 10, 10],
-                fov: 20,
-              }}
-            >
+         
               <Blob />
-            </Canvas>
+           
             <p className="text-md mx-auto max-w-xl py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">
               Developer providing services for programming and design content
               needs. Join me down below and let's get cracking!
