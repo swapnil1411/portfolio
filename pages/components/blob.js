@@ -19,7 +19,9 @@ material.roughness = 0.75;
       fov: 20,
     }}
   >
-    <OrbitControls autoRotate={3} />
+    <OrbitControls autoRotate={3} enableZoom={false} 
+        enablePan={false} 
+        enableRotate={false} />
     <ambientLight intensity={0.5} />
     <spotLight position={[5, 5, 5]} angle={0.15} penumbra={1} />
     
