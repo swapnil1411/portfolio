@@ -53,7 +53,7 @@ export default function Home() {
             </h3>
             <Canvas
               camera={{
-                position: [5, 5, 5],
+                position: [10, 10, 10],
                 fov: 20,
               }}
             >
