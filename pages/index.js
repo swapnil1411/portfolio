@@ -44,6 +44,12 @@ export default function Home() {
             </ul>
           </nav>
           <div className="p-10 py-10 text-center">
+          <div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
+          <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <Blob dark={darkMode} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+          <Image src={deved} layout="fill" objectFit="cover" />
+        </div>
+            </div>
             <h2 className="py-2 text-5xl font-medium text-teal-600 md:text-6xl dark:text-teal-400">
               Swapnil Nanavati
             </h2>
@@ -51,7 +57,7 @@ export default function Home() {
               Developer
             </h3>
          
-              <Blob dark={darkMode}/>
+             
            
             <p className="text-md mx-auto max-w-xl py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">
               Developer providing services for programming and design content
@@ -72,9 +78,7 @@ export default function Home() {
                 }}
               />
             </div>
-            <div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
-            </div>
+            
           </div>
         </section>
    <Skills/>

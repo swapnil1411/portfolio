@@ -62,7 +62,7 @@ const Blob = ({dark}) => {
   return (
     <Canvas
       camera={{
-        position: [10, 10, 10],
+        position: [13, 13, 13],
         fov: 20,
       }}
     >
