@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillYoutube, AiFillGithub, AiFillMessage, AiFillMail } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
@@ -44,37 +44,41 @@ export default function Home() {
             </ul>
           </nav>
           <div className="p-10 pb-10 pt-0 text-center">
-          <div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
-          <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-          <Blob dark={darkMode} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+          <div className="relative mx-auto mt-20 mb-10 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
           <Image src={deved} layout="fill" objectFit="cover" />
-        </div>
             </div>
             <h2 className="py-2 text-5xl font-medium text-teal-600 md:text-6xl dark:text-teal-400">
               Swapnil Nanavati
             </h2>
-            <h3 className="py-2 text-2xl md:text-3xl dark:text-white">
-              Developer
+            <h3 className="py-4 text-2xl md:text-3xl dark:text-white">
+              Full-Stack Developer
             </h3>
          
              
            
-            <p className="text-md mx-auto max-w-xl py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">
+            <p className="text-2xl mx-auto max-w-xl py-5 leading-8 text-gray-700 md:text-2xl dark:text-gray-200">
               Developer providing services for programming and design content
               needs. Join me down below and let's get cracking!
             </p>
-            <div className="flex justify-center gap-16 py-3 text-5xl text-gray-600 dark:text-gray-400">
+            <div className="flex justify-center gap-6 py-3 text-5xl text-teal-600 dark:text-gray-400">
               <AiFillGithub
-                className="cursor-pointer"
+                className="cursor-pointer  hover:text-teal-800"
                 onClick={() => {
                   window.location = "https://github.com/swapnil1411";
                 }}
               />
               <AiFillLinkedin
-                className="cursor-pointer"
+                className="cursor-pointer  hover:text-teal-800"
                 onClick={() => {
                   window.location =
                     "https://www.linkedin.com/in/swapnil-nanavati-181989199/";
+                }}
+              />
+
+              <AiFillMail
+                className="cursor-pointer  hover:text-teal-800"
+                onClick={() => {
+                  window.open('mailto:swapnilnanavati12@gmail.com');
                 }}
               />
             </div>

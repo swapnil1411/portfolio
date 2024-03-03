@@ -8,7 +8,7 @@ const Internships = () => {
         <>
         <section className="py-10">
         <div>
-          <h3 className="py-1 text-3xl dark:text-white ">Portfolio</h3>
+          <h3 className="py-1 text-3xl dark:text-white ">Projects</h3>
           <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
             Since the beginning of my journey as a developer, I've worked
             remotely for
