@@ -24,7 +24,7 @@ const Blob = ({dark}) => {
       vec3 pos = position;
 
      
-      float displacement = 0.5 * noise(pos);
+      float displacement = 0.3 * noise(pos);
       pos += normal * displacement;
 
       
