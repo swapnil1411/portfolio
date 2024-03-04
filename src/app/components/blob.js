@@ -1,11 +1,13 @@
+"use client";
+import { useEffect } from "react";
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from 'three';
-import React, { useRef, useEffect } from 'react';
+
 import { Canvas } from "@react-three/fiber";
 
 const Blob = ({dark}) => {
   const geometry = new THREE.IcosahedronGeometry(3, 5);
-
+ 
   // Define your vertex shader as a string
   const vertexShader = `
     varying vec2 vUv;

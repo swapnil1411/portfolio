@@ -1,20 +1,30 @@
+"use client";
+
 import Head from "next/head";
 import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
+
+import { useState,useEffect } from "react";
+import deved from "../../public/dev-ed-wave.png";
 import Skills from "./components/skills";
 import Image from "next/image";
 
-import ems from "../public/Employee.png";
-import drivingTest from "../public/drivingTest.png";
+
 
 import Blob from "./components/blob";
 import Internships from "./components/internships";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
 
+  const [darkMode, setDarkMode] = useState(false);
+  
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Access window.location here
+      // Example: console.log(window.location.pathname);
+    }
+  }, []);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
