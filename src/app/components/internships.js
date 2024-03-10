@@ -11,14 +11,16 @@ const Internships = () => {
     <>
       <section className="py-10">
         <div>
-          <h3 className="py-1 text-3xl dark:text-white ">Work</h3>
+          <h3 className="py-1 text-3xl dark:text-white text-center mb-3">Work</h3>
           <VerticalTimeline >
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="May 2022 - Nov 2022"
               icon={<MdMapsHomeWork />}
+              contentStyle={{ backgroundColor: 'rgb(241 245 249)', borderRadius: '5px' }}
+              position="right"
               visible={true}
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: "rgb(0, 225, 101)", color: "#fff" }}
             >
             <h3 className="text-lg font-semibold mb-2">
             Front-end Developer
@@ -43,8 +45,10 @@ const Internships = () => {
               className="vertical-timeline-element--work"
               date="Jan 2022 - Apr 2022"
               icon={<MdMapsHomeWork />}
+              position="left"
+              contentStyle={{ backgroundColor: 'rgb(241 245 249)', borderRadius: '5px' }}
               visible={true}
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: "rgb(0, 225, 101)", color: "#fff" }}
             >
             <h3 className="vertical-timeline-element-title text-lg font-semibold mb-2">
             Jr. Software Developer

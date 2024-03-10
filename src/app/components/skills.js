@@ -5,8 +5,8 @@ const Skills = () => {
     <>
       <section>
         <div>
-          <h3 className="py-1 text-3xl dark:text-white ">Skills</h3>
-          <div className="flex flex-wrap">
+          <h3 className="py-1 text-3xl dark:text-white mb-4 text-center ">Skills</h3>
+          <div className="flex flex-wrap gap-6">
             <Image
               src={
                 "https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
