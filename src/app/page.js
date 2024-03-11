@@ -42,7 +42,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="ml-8 text-white rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
+                  className="ml-8 text-white rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2"
                   href="https://drive.google.com/file/d/1Tb8yjSkZ6I8ihS1dwqeeYL8IL0KaNlmO/view?usp=sharing"
                 >
                   Resume
@@ -50,8 +50,8 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="p-10 pb-10 pt-0 text-center">
-            <div className="relative mx-auto mt-20 mb-10 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
+          <div className="p-10 pb-10 pt-0 text-center sm:p-0">
+            <div className="relative mx-auto mt-20 mb-10 lg:h-80 lg:w-80 overflow-hidden rounded-full w-[13rem] h-[13rem] bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
             <h2 className="py-2 text-5xl font-medium text-teal-600 md:text-6xl dark:text-teal-400">
