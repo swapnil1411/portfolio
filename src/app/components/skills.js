@@ -5,7 +5,7 @@ const Skills = () => {
     <>
       <section>
         <div>
-          <h3 className="py-1 text-3xl dark:text-white mb-4 text-center ">Skills</h3>
+          <h3 className="py-10 text-3xl dark:text-white mb-4 text-center justify-content-center">Skills</h3>
           <div className="flex flex-wrap gap-6">
             <Image
               src={

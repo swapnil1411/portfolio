@@ -11,8 +11,13 @@ import Image from "next/image";
 
 import Internships from "./components/internships";
 import { Projects } from "./components/project";
+import Footer from "./components/footer";
+
+
+
 
 export default function Home() {
+
   const [darkMode, setDarkMode] = useState(false);
 
   return (
@@ -85,9 +90,12 @@ export default function Home() {
           </div>
         </section>
         <Skills />
-        <Internships />
-        <Projects/>
+        <Internships darkMode={darkMode}/>
+       <Projects />
+       
+       <Footer/>
       </main>
+     
     </div>
   );
 }
