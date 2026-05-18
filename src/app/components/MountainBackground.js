@@ -1,10 +1,8 @@
 "use client";
-import { useRef, useMemo, useEffect, Suspense, useCallback } from "react";
+import { useRef, useMemo, useEffect, useState, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
-
-useGLTF.preload("/models/2.glb");
 import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 // ─── Stars ───────────────────────────────────────────────────────────────────
 function Stars() {
@@ -87,16 +85,22 @@ function ProceduralMountain() {
   );
 }
 
-// ─── GLB Mountain (swap in when you export your .blend as mountain.glb) ──────
+// ─── GLB Mountain ────────────────────────────────────────────────────────────
 function GLBMountain({ scrollRef }) {
-  const { scene } = useGLTF("/models/2.glb");
+  const [scene, setScene] = useState(null);
   const ref = useRef();
+
+  useEffect(() => {
+    const loader = new GLTFLoader();
+    loader.load("/models/2.glb", (gltf) => setScene(gltf.scene));
+  }, []);
 
   useFrame(() => {
     if (!ref.current) return;
     ref.current.rotation.y = scrollRef.current * Math.PI * 2;
   });
 
+  if (!scene) return null;
   return <primitive ref={ref} object={scene} position={[0, -18, 0]} scale={[14, 20, 14]} />;
 }
 
