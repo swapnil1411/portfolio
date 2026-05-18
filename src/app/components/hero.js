@@ -1,12 +1,6 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
-import dynamic from "next/dynamic";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const HeroScene = dynamic(() => import("./heroScene"), {
-  ssr: false,
-  loading: () => null,
-});
 
 const SUBTITLES = [
   "React & Next.js Expert",
@@ -16,7 +10,6 @@ const SUBTITLES = [
 ];
 
 export default function Hero() {
-  const mouseRef = useRef({ x: 0, y: 0 });
   const [subtitleIdx, setSubtitleIdx] = useState(0);
 
   useEffect(() => {
@@ -26,26 +19,15 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleMouseMove = (e) => {
-    mouseRef.current = {
-      x: (e.clientX / window.innerWidth - 0.5) * 2,
-      y: -(e.clientY / window.innerHeight - 0.5) * 2,
-    };
-  };
-
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0f1e]"
-      onMouseMove={handleMouseMove}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* 3D canvas — full background */}
-      <div className="absolute inset-0 z-0">
-        <HeroScene mouseRef={mouseRef} />
-      </div>
-
-      {/* Radial gradient overlay to blend canvas edges */}
-      <div className="absolute inset-0 z-[1] pointer-events-none bg-radial-gradient" />
+      {/* Subtle vignette so hero text pops over the 3-D mountain behind */}
+      <div className="absolute inset-0 z-[1] pointer-events-none"
+        style={{ background: "radial-gradient(ellipse at 50% 40%, transparent 30%, rgba(10,15,30,0.55) 100%)" }}
+      />
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-48 z-[2] pointer-events-none bg-gradient-to-t from-[#0a0f1e] to-transparent" />
