@@ -16,7 +16,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Hi Swapnil,\n\n${form.message}\n\nFrom: ${form.name}\nEmail: ${form.email}`
     );
-    window.open(`mailto:Snanavati@psyncopate.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:swapnilnanavati12@gmail.com?subject=${subject}&body=${body}`);
     setSent(true);
     setTimeout(() => setSent(false), 4000);
   };
@@ -54,7 +54,7 @@ export default function Contact() {
             <h3 className="text-sm font-semibold text-[#ccd6f6] mb-4">Direct contact</h3>
             <div className="space-y-3">
               <a
-                href="mailto:Snanavati@psyncopate.com"
+                href="mailto:swapnilnanavati12@gmail.com"
                 className="flex items-center gap-3 text-sm text-[#8892b0] hover:text-[#00d4ff] transition-colors group"
               >
                 <div className="w-9 h-9 rounded-lg bg-[#00d4ff]/10 border border-[#00d4ff]/20 flex items-center justify-center flex-shrink-0">
@@ -62,7 +62,7 @@ export default function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="break-all">Snanavati@psyncopate.com</span>
+                <span className="break-all">swapnilnanavati12@gmail.com</span>
               </a>
 
               <a

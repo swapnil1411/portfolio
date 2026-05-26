@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const SUBTITLES = [
   "React & Next.js Expert",
+  "React Native & Flutter Apps",
   "Kafka & Cloud Architecture",
   "FastAPI & Python Backend",
   "Spring Boot & Microservices",
@@ -33,7 +34,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-48 z-[2] pointer-events-none bg-gradient-to-t from-[#0a0f1e] to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="hero-content relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Available badge */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -50,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7, ease: "easeOut" }}
-          className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 gradient-text leading-tight"
+          className="text-4xl min-[380px]:text-5xl sm:text-6xl md:text-7xl font-bold mb-3 gradient-text leading-tight"
         >
           Swapnil Nanavati
         </motion.h1>
@@ -88,8 +89,8 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="text-[#8892b0] text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          I build enterprise-grade web apps, Kafka-based data pipelines, and cloud
-          infrastructure. From React frontends to Spring Boot microservices — fully end-to-end.
+          I build mobile apps, responsive websites, and production deployment workflows.
+          From React Native and Flutter to Next.js and cloud DevOps, I can take projects end-to-end.
         </motion.p>
 
         {/* CTA buttons */}
@@ -110,12 +111,10 @@ export default function Hero() {
             View My Work
           </a>
           <a
-            href="https://www.upwork.com/freelancers/~YOUR_UPWORK_PROFILE_ID"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:swapnilnanavati12@gmail.com?subject=Freelance%20Inquiry"
             className="w-full sm:w-auto px-8 py-3 rounded-lg border border-[#00d4ff]/60 text-[#00d4ff] font-bold text-sm hover:bg-[#00d4ff]/10 active:scale-95 transition-all"
           >
-            Hire Me on Upwork ↗
+            Hire Me by Email
           </a>
         </motion.div>
 
@@ -149,7 +148,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="mailto:Snanavati@psyncopate.com"
+            href="mailto:swapnilnanavati12@gmail.com"
             className="hover:text-[#00d4ff] transition-colors"
             aria-label="Email"
           >

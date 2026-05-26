@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata = {
   title: "Swapnil Nanavati – Full-Stack Developer & Senior Consultant",
   description:
-    "Full-stack developer specializing in React, Next.js, Spring Boot, FastAPI, Kafka, and cloud technologies (AWS, GCP). Available for freelance on Fiverr and Upwork.",
+    "Freelance developer specializing in React, Next.js, React Native, Flutter, DevOps, and cloud technologies.",
   keywords: [
     "Full-Stack Developer",
     "React developer",
@@ -14,7 +14,7 @@ export const metadata = {
     "Kafka developer",
     "Spring Boot developer",
     "FastAPI developer",
-    "freelance developer Upwork",
+    "freelance mobile developer",
     "hire React developer",
     "TypeScript developer",
   ],
