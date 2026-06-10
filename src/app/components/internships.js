@@ -4,6 +4,41 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const EXPERIENCES = [
   {
+    company: "Freelance Projects",
+    role: "Mobile App Developer",
+    period: "2026 – Present",
+    current: true,
+    color: "#34d399",
+    description:
+      "Building and stabilizing production mobile apps across React Native, Expo, Flutter, iOS, Android, and Supabase-backed workflows.",
+    projects: [
+      {
+        name: "MyLee Mobile App",
+        period: "Release stabilization",
+        bullets: [
+          "Upgraded a React Native/Expo healthcare app to Expo SDK 54 and React Native 0.81.5",
+          "Resolved Google Play 16 KB page size compliance issues across native dependencies, Gradle, NDK, and Android packaging",
+          "Fixed release-blocking Android crashes in All Scans, Daily Tips, logout, and persisted legacy user data flows",
+          "Stabilized Android and iOS build pipelines across Gradle, CocoaPods, Hermes, codegen, and new architecture compatibility",
+          "Improved post-upgrade UI regressions across radio buttons, chart axes, tips filtering, and input labels",
+        ],
+        tech: ["React Native", "Expo", "TypeScript", "Android Gradle", "iOS", "Hermes", "Zustand", "Victory Native", "BLE", "AsyncStorage"],
+      },
+      {
+        name: "DisciplMe Bible Study App",
+        period: "Pre-release / App Store review",
+        bullets: [
+          "Resolved Flutter iOS build failures involving CocoaPods, Xcode signing, dependency sync, and Flutter compatibility changes",
+          "Fixed custom verse and topic workflows so newly added study content appears immediately and persists across sessions",
+          "Integrated Supabase schema updates for user-scoped custom topics and onboarding survey data",
+          "Improved mobile UI polish across category filters, navigation behavior, study screens, and practice flows",
+          "Supported App Store submission readiness with iOS build versions, privacy disclosures, and Apple review troubleshooting",
+        ],
+        tech: ["Flutter", "Dart", "Cubit", "go_router", "Supabase", "PostgreSQL", "Supabase Auth", "Xcode", "CocoaPods", "in_app_purchase", "AppsFlyer"],
+      },
+    ],
+  },
+  {
     company: "Psyncopate Technologies",
     role: "Senior Consultant",
     period: "Jun 2025 – Present",
