@@ -86,7 +86,7 @@ export default function Footer() {
         <div className="mt-8 pt-6 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] text-[#8892b0]">
           <p>© {new Date().getFullYear()} Swapnil Nanavati. All rights reserved.</p>
           <a
-            href="https://drive.google.com/file/d/1Tb8yjSkZ6I8ihS1dwqeeYL8IL0KaNlmO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1dJxnjZULs4yD0ARkAJ9WxslxKr-KZI9m/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#00d4ff] transition-colors"

@@ -65,7 +65,7 @@ export default function Navbar() {
 
         {/* Resume CTA */}
         <a
-          href="https://drive.google.com/file/d/1Tb8yjSkZ6I8ihS1dwqeeYL8IL0KaNlmO/view?usp=sharing"
+          href="https://drive.google.com/file/d/1dJxnjZULs4yD0ARkAJ9WxslxKr-KZI9m/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-[#00d4ff] border border-[#00d4ff]/50 rounded-md hover:bg-[#00d4ff]/10 transition-colors duration-200"
@@ -115,7 +115,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://drive.google.com/file/d/1Tb8yjSkZ6I8ihS1dwqeeYL8IL0KaNlmO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1dJxnjZULs4yD0ARkAJ9WxslxKr-KZI9m/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs font-semibold text-[#00d4ff] border border-[#00d4ff]/40 rounded-md px-3 py-2 text-center hover:bg-[#00d4ff]/10 transition-colors"
